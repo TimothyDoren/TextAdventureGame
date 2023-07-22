@@ -4,6 +4,7 @@ Module Program
     Sub Main(args As String())
         Console.Write("What is your name? ")
         Dim characterName As String = Console.ReadLine()
+        Dim player As Character = New Character(characterName)
         Console.WriteLine($"Welcome to my game {characterName}!")
         Console.WriteLine("Please pick a class: ")
         Console.WriteLine(" Thief")
