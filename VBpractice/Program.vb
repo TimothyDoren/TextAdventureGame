@@ -16,6 +16,14 @@ Module Program
         Select Case classChoice
             Case 1
                 player = New Thief(characterName)
+            Case 2
+                player = New Mage(characterName)
+            Case 3
+                player = New Viking(characterName)
+            Case 4
+                player = New Bandit(characterName)
+            Case 5
+                player = New Bard(characterName)
         End Select
         Console.WriteLine("Current Stats: ")
         player.ShowStats()
