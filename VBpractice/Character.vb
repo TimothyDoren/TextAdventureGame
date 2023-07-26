@@ -1,4 +1,4 @@
-﻿Public Class Character
+﻿Public MustInherit Class Character
     Public Property Name As String
     Public Property Health As Integer
     Public Property Attack As Integer
@@ -10,5 +10,9 @@
     Public Sub New(characterName As String)
         Name = characterName
     End Sub
+
+    Public MustOverride Sub ShowStats()
+    Public MustOverride Sub SpecialAbility()
+
 
 End Class
